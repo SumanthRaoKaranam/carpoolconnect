@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: #1e3d59;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.author-section {
+  max-width: 900px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.author-photo {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.author-details {
+  flex-grow: 1;
+}
+
+h2 {
+  color: #1e3d59;
+  font-size: 2rem;
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info a {
+  color: #f28705;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1e3d59;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

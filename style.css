@@ -1,0 +1,191 @@
+
+.but
+{
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: red;
+   height: 100px;
+   width: 300px;
+   background-color: black ;
+   
+
+}
+.options
+{
+  display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+            gap: 20px; /* Adds spacing between the buttons */
+            max-width: 400px; /* Limits the width of the button container */
+            margin: 0 auto; /* Centers the container horizontally */
+            padding: 20px;
+            color: aqua;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.shaking-text {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px aqua, 0 0 20px black;
+  animation: shake 0.5s infinite;
+  padding-left: 600px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.shaking-text-fin {
+  
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px aqua, 0 0 20px black;
+  animation: shake 0.5s infinite;
+  padding-left: 350px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 550px;
+}
+
+.wheel {
+  width: 50px;
+  height: 50px;
+  border: 5px solid blue;
+  border-radius: 50%;
+  position: relative;
+  animation: spin 2s linear infinite;
+}
+
+.wheel::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background-color:blue;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  color: blue;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #f28705;
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
